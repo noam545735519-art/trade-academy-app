@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<!-- saved from url=(0045)file:///C:/Users/noam5/Downloads/index_5.html -->
+<html lang="he" dir="rtl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trade Academy — קורס מסחר בבורסה</title>
+  <link href="./Trade Academy — קורס מסחר בבורסה_files/css2" rel="stylesheet">
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    :root{
+      --dark:#0f172a;--dark2:#1e293b;--dark3:#334155;
+      --blue1:#1d4ed8;--blue2:#3b82f6;--blue3:#93c5fd;
+      --gold:#f59e0b;--gold2:#fbbf24;
+      --text:#f1f5f9;--text2:#94a3b8;--text3:#cbd5e1;
+      --border:#334155;--radius:10px
+    }
+    body{font-family:'Heebo',sans-serif;direction:rtl;text-align:right;background:var(--dark);color:var(--text);min-height:100vh}
+    .page{display:none}.page.active{display:block}
+    .btn{padding:10px 24px;border-radius:var(--radius);border:none;cursor:pointer;font-family:'Heebo',sans-serif;font-size:15px;font-weight:600;transition:all .2s}
+    .btn-primary{background:linear-gradient(135deg,var(--blue1),var(--blue2));color:#fff;box-shadow:0 2px 12px rgba(59,130,246,.3)}
+    .btn-primary:hover{opacity:.9;transform:translateY(-1px)}
+    .btn-outline{background:transparent;border:1.5px solid var(--blue2);color:var(--blue2)}
+    .btn-outline:hover{background:rgba(59,130,246,.1)}
+    .btn-gold{background:linear-gradient(135deg,var(--gold),var(--gold2));color:#0f172a;font-weight:700}
+    .btn-gold:hover{opacity:.9;transform:translateY(-1px)}
+    .btn-sm{padding:6px 16px;font-size:13px}
+    input{width:100%;padding:11px 14px;border:1px solid var(--border);border-radius:var(--radius);font-family:'Heebo',sans-serif;font-size:15px;background:var(--dark2);color:var(--text);margin-bottom:12px;direction:rtl}
+    input:focus{outline:none;border-color:var(--blue2)}
+    label{font-size:13px;color:var(--text2);display:block;margin-bottom:4px}
+    .card{background:var(--dark2);border:1px solid var(--border);border-radius:var(--radius);padding:1.25rem}
+    .badge{display:inline-block;padding:4px 12px;border-radius:99px;font-size:12px;font-weight:600}
+    .badge-blue{background:rgba(59,130,246,.15);color:var(--blue3);border:1px solid rgba(59,130,246,.3)}
+    .badge-gold{background:rgba(245,158,11,.15);color:var(--gold2);border:1px solid rgba(245,158,11,.3)}
+    .badge-green{background:rgba(34,197,94,.15);color:#86efac;border:1px solid rgba(34,197,94,.3)}
+    .err{color:#f87171;font-size:13px;margin-top:-8px;margin-bottom:8px;display:none}
+    .grad-text{background:linear-gradient(135deg,#60a5fa,#a78bfa);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+    nav{display:flex;align-items:center;justify-content:space-between;padding:1rem 1.5rem;border-bottom:1px solid var(--border);background:rgba(15,23,42,.95);position:sticky;top:0;z-index:10;backdrop-filter:blur(8px)}
+    .logo{font-size:20px;font-weight:900;cursor:pointer;background:linear-gradient(135deg,var(--blue2),var(--gold));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+    .nav-actions{display:flex;gap:8px;align-items:center}
+  </style>
+</head>
+<body>
+
+<!-- LANDING -->
+<div class="page active" id="page-landing">
+  <nav>
+    <div class="logo" onclick="goTo(&#39;landing&#39;)">TradeAcademy</div>
+    <div class="nav-actions">
+      <button class="btn btn-outline btn-sm" onclick="goTo(&#39;login&#39;)">התחברות</button>
+      <button class="btn btn-gold btn-sm" onclick="goTo(&#39;register&#39;)">הצטרפות</button>
+    </div>
+  </nav>
+  <div style="max-width:700px;margin:0 auto;padding:3rem 1.5rem 2rem">
+    <div style="text-align:center;margin-bottom:3rem">
+      <div class="badge badge-gold" style="margin-bottom:1.2rem">📈 קורס מסחר מקיף בעברית</div>
+      <h1 style="font-size:2.4rem;font-weight:900;line-height:1.2;margin-bottom:1rem">
+        למד לסחור בבורסה<br><span class="grad-text">בביטחון ובשיטה</span>
+      </h1>
+      <p style="font-size:1rem;color:var(--text2);margin-bottom:2rem;line-height:1.8">12 פרקי וידאו מקצועיים • מהיסודות ועד אסטרטגיות מתקדמות<br>לומדים בקצב שלך, עם גישה לכל החיים</p>
+      <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
+        <button class="btn btn-gold" onclick="goTo(&#39;register&#39;)" style="padding:13px 36px;font-size:16px">התחל ללמוד ←</button>
+        <button class="btn btn-outline" onclick="goTo(&#39;login&#39;)">יש לי חשבון</button>
+      </div>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:2.5rem">
+      <div class="card" style="text-align:center">
+        <div style="font-size:24px;margin-bottom:8px">🎓</div>
+        <div style="font-weight:700;font-size:15px">12 פרקים</div>
+        <div style="font-size:12px;color:var(--text2);margin-top:3px">+ מבחן סיום</div>
+      </div>
+      <div class="card" style="text-align:center">
+        <div style="font-size:24px;margin-bottom:8px">🎬</div>
+        <div style="font-weight:700;font-size:15px">וידאו בעברית</div>
+        <div style="font-size:12px;color:var(--text2);margin-top:3px">שיעורים מקצועיים</div>
+      </div>
+      <div class="card" style="text-align:center">
+        <div style="font-size:24px;margin-bottom:8px">♾</div>
+        <div style="font-weight:700;font-size:15px">גישה לכל חיים</div>
+        <div style="font-size:12px;color:var(--text2);margin-top:3px">כולל עדכונים</div>
+      </div>
+    </div>
+    <div class="card" style="border:1px solid rgba(245,158,11,.4);text-align:center;padding:2rem">
+      <div class="badge badge-gold" style="margin-bottom:12px">הצטרפות מוגבלת</div>
+      <div style="font-size:2.2rem;font-weight:900;color:var(--gold2);margin-bottom:4px">₪497</div>
+      <div style="font-size:13px;color:var(--text2);margin-bottom:1.5rem">תשלום חד פעמי • גישה לכל החיים</div>
+      <ul style="list-style:none;text-align:right;margin-bottom:1.5rem;font-size:14px;line-height:2.2;color:var(--text3)">
+        <li>✅ 12 פרקי וידאו + חומר עזר</li>
+        <li>✅ חידונים אחרי כל פרק</li>
+        <li>✅ מבחן סיום ותעודה</li>
+        <li>✅ יומן מסחר אישי</li>
+        <li>✅ קבוצת תמיכה חברים</li>
+      </ul>
+      <button class="btn btn-gold" onclick="goTo(&#39;register&#39;)" style="width:100%;padding:14px;font-size:16px">הצטרף עכשיו ←</button>
+    </div>
+  </div>
+</div>
+
+<!-- LOGIN -->
+<div class="page" id="page-login">
+  <nav>
+    <div class="logo" onclick="goTo(&#39;landing&#39;)">TradeAcademy</div>
+    <button class="btn btn-outline btn-sm" onclick="goTo(&#39;register&#39;)">הרשמה</button>
+  </nav>
+  <div style="max-width:400px;margin:3rem auto;padding:0 1.5rem">
+    <h2 style="font-size:1.7rem;font-weight:700;margin-bottom:4px">התחברות</h2>
+    <p style="color:var(--text2);font-size:14px;margin-bottom:1.5rem">ברוך השב לאקדמיה 👋</p>
+    <div class="card">
+      <label>אימייל</label>
+      <input type="email" id="login-email" placeholder="your@email.com">
+      <label>סיסמה</label>
+      <input type="password" id="login-pass" placeholder="••••••••">
+      <div class="err" id="login-err">אימייל או סיסמה שגויים</div>
+      <button class="btn btn-primary" onclick="doLogin()" style="width:100%;padding:12px">התחבר →</button>
+      <p style="text-align:center;font-size:13px;margin-top:1rem;color:var(--text2)">אין לך חשבון? <span style="color:var(--blue3);cursor:pointer" onclick="goTo(&#39;register&#39;)">הרשם כאן</span></p>
+    </div>
+  </div>
+</div>
+
+<!-- REGISTER -->
+<div class="page" id="page-register">
+  <nav>
+    <div class="logo" onclick="goTo(&#39;landing&#39;)">TradeAcademy</div>
+    <button class="btn btn-outline btn-sm" onclick="goTo(&#39;login&#39;)">כניסה</button>
+  </nav>
+  <div style="max-width:400px;margin:3rem auto;padding:0 1.5rem">
+    <h2 style="font-size:1.7rem;font-weight:700;margin-bottom:4px">הצטרפות לקורס</h2>
+    <p style="color:var(--text2);font-size:14px;margin-bottom:1.5rem">צור חשבון וגישה מיידית לכל הפרקים 🚀</p>
+    <div class="card">
+      <label>שם מלא</label>
+      <input type="text" id="reg-name" placeholder="ישראל ישראלי">
+      <label>אימייל</label>
+      <input type="email" id="reg-email" placeholder="your@email.com">
+      <label>סיסמה</label>
+      <input type="password" id="reg-pass" placeholder="לפחות 6 תווים">
+      <div class="err" id="reg-err">נא למלא את כל השדות</div>
+      <button class="btn btn-gold" onclick="doRegister()" style="width:100%;padding:12px">צור חשבון ←</button>
+      <p style="text-align:center;font-size:13px;margin-top:1rem;color:var(--text2)">יש לך כבר חשבון? <span style="color:var(--blue3);cursor:pointer" onclick="goTo(&#39;login&#39;)">התחבר כאן</span></p>
+    </div>
+  </div>
+</div>
+
+<!-- DASHBOARD -->
+<div class="page" id="page-dashboard">
+  <nav>
+    <div class="logo">TradeAcademy</div>
+    <div class="nav-actions">
+      <span id="user-greeting" style="font-size:13px;color:var(--text2)"></span>
+      <button class="btn btn-outline btn-sm" onclick="doLogout()">יציאה</button>
+    </div>
+  </nav>
+  <div style="max-width:700px;margin:0 auto;padding:2rem 1.5rem">
+    <div style="margin-bottom:1.5rem">
+      <h2 style="font-size:1.5rem;font-weight:700">הפרקים שלי</h2>
+      <p style="font-size:13px;color:var(--text2);margin-top:3px">לחץ על פרק כדי לצפות בשיעור</p>
+    </div>
+    <div id="progress-bar" style="margin-bottom:1.5rem"></div>
+    <div style="display:grid;gap:8px" id="chapters-list"></div>
+    <div class="card" style="margin-top:1rem;border:1px solid rgba(59,130,246,.4);display:flex;align-items:center;gap:12px">
+      <div style="font-size:28px">📚</div>
+      <div style="flex:1">
+        <div style="font-weight:600">כניסה לקורס המלא</div>
+        <div style="font-size:13px;color:var(--text2)">12 פרקים + מאמן אישי</div>
+      </div>
+      <a href="https://noam545735519-art.github.io/trade-academy/students.html" target="_blank" class="btn btn-primary btn-sm">כנס לקורס →</a>
+    </div>
+    <div class="card" style="margin-top:1rem;border:1px solid rgba(245,158,11,.3);display:flex;align-items:center;gap:12px">
+      <div style="font-size:28px">🏆</div>
+      <div style="flex:1">
+        <div style="font-weight:600">מבחן סיום</div>
+        <div style="font-size:13px;color:var(--text2)">זמין לאחר סיום כל הפרקים</div>
+      </div>
+      <button class="btn btn-outline btn-sm" onclick="goTo(&#39;exam&#39;)">התחל →</button>
+    </div>
+  </div>
+</div>
+
+<!-- LESSON -->
+<div class="page" id="page-lesson">
+  <nav>
+    <div class="logo" onclick="goTo(&#39;dashboard&#39;)" style="cursor:pointer">TradeAcademy</div>
+    <button class="btn btn-outline btn-sm" onclick="goTo(&#39;dashboard&#39;)">← חזרה לקורס</button>
+  </nav>
+  <div style="max-width:700px;margin:0 auto;padding:2rem 1.5rem">
+    <div id="lesson-content"></div>
+  </div>
+</div>
+
+<!-- EXAM -->
+<div class="page" id="page-exam">
+  <nav>
+    <div class="logo" onclick="goTo(&#39;dashboard&#39;)" style="cursor:pointer">TradeAcademy</div>
+    <button class="btn btn-outline btn-sm" onclick="goTo(&#39;dashboard&#39;)">← חזרה</button>
+  </nav>
+  <div style="max-width:500px;margin:4rem auto;padding:0 1.5rem;text-align:center">
+    <div style="font-size:3.5rem;margin-bottom:1rem">📝</div>
+    <h2 style="font-size:1.5rem;font-weight:700;margin-bottom:8px">מבחן סיום</h2>
+    <p style="color:var(--text2);margin-bottom:1.5rem">השלם את כל 12 הפרקים לפני גישה למבחן</p>
+    <button class="btn btn-outline" onclick="goTo(&#39;dashboard&#39;)">חזרה לפרקים</button>
+  </div>
+</div>
+
+<script>
+const CHAPTERS=[
+  {id:1,title:"מבוא לשוק ההון",desc:"מה זה בורסה ואיך היא עובדת",time:"45 דק'",free:true},
+  {id:2,title:"ניירות ערך — מניות ואגרות חוב",desc:"סוגי ניירות ערך ואיך הם נסחרים",time:"52 דק'",free:true},
+  {id:3,title:"פתיחת חשבון מסחר",desc:"איך בוחרים ברוקר ופותחים חשבון",time:"38 דק'",free:false},
+  {id:4,title:"קריאת גרפים — ניתוח טכני",desc:"נרות יפניים, תמיכות והתנגדויות",time:"67 דק'",free:false},
+  {id:5,title:"ניתוח פונדמנטלי",desc:"קריאת דוחות כספיים והערכת שווי",time:"71 דק'",free:false},
+  {id:6,title:"ניהול סיכונים",desc:"חישוב פוזיציה, stop loss ו-R:R",time:"58 דק'",free:false},
+  {id:7,title:"מדדים ותעודות סל",desc:"TA-125, S&P 500 ואיך להשקיע בהם",time:"44 דק'",free:false},
+  {id:8,title:"פסיכולוגיה של המסחר",desc:"שליטה ברגשות ומשמעת מסחר",time:"63 דק'",free:false},
+  {id:9,title:"אסטרטגיות מסחר",desc:"מגמות, פריצות ותבניות מחיר",time:"79 דק'",free:false},
+  {id:10,title:"מיסוי והיבטים משפטיים",desc:"מס רווחי הון, דיווח ותכנון מס",time:"41 דק'",free:false},
+  {id:11,title:"בניית תיק השקעות",desc:"פיזור סיכונים ואיזון תיק",time:"55 דק'",free:false},
+  {id:12,title:"תוכנית מסחר אישית",desc:"בניית שיטה ויומן מסחר",time:"68 דק'",free:false},
+];
+
+let currentUser=JSON.parse(localStorage.getItem('ta_user')||'null');
+
+function goTo(p){
+  document.querySelectorAll('.page').forEach(x=>x.classList.remove('active'));
+  document.getElementById('page-'+p).classList.add('active');
+  window.scrollTo(0,0);
+  if(p==='dashboard')renderDashboard();
+}
+
+function doLogin(){
+  const email=document.getElementById('login-email').value.trim();
+  const pass=document.getElementById('login-pass').value;
+  const err=document.getElementById('login-err');
+  err.style.display='none';
+  const users=[...JSON.parse(localStorage.getItem('ta_users')||'[]')];
+  const found=users.find(u=>u.email===email&&u.pass===pass);
+  if(!found){err.style.display='block';return;}
+  currentUser={email:found.email,name:found.name};
+  localStorage.setItem('ta_user',JSON.stringify(currentUser));
+  goTo('dashboard');
+}
+
+function doRegister(){
+  const name=document.getElementById('reg-name').value.trim();
+  const email=document.getElementById('reg-email').value.trim();
+  const pass=document.getElementById('reg-pass').value;
+  const err=document.getElementById('reg-err');
+  err.style.display='none';
+  if(!name||!email||pass.length<6){
+    err.style.display='block';
+    err.textContent=pass.length<6?'סיסמה חייבת להיות לפחות 6 תווים':'נא למלא את כל השדות';
+    return;
+  }
+  const users=JSON.parse(localStorage.getItem('ta_users')||'[]');
+  users.push({name,email,pass});
+  localStorage.setItem('ta_users',JSON.stringify(users));
+  currentUser={email,name};
+  localStorage.setItem('ta_user',JSON.stringify(currentUser));
+  goTo('dashboard');
+}
+
+function doLogout(){
+  localStorage.removeItem('ta_user');
+  currentUser=null;
+  goTo('landing');
+}
+
+function renderDashboard(){
+  if(!currentUser){goTo('login');return;}
+  document.getElementById('user-greeting').textContent='שלום, '+currentUser.name+' 👋';
+  const progress=JSON.parse(localStorage.getItem('ta_progress')||'{}');
+  const done=Object.keys(progress).length;
+  const pct=Math.round(done/12*100);
+
+  document.getElementById('progress-bar').innerHTML=`
+    <div style="background:var(--dark2);border:1px solid var(--border);border-radius:var(--radius);padding:1rem">
+      <div style="display:flex;justify-content:space-between;font-size:13px;margin-bottom:8px">
+        <span style="font-weight:600">התקדמות בקורס</span>
+        <span style="color:var(--blue3);font-weight:600">${done}/12 פרקים (${pct}%)</span>
+      </div>
+      <div style="height:7px;background:var(--dark3);border-radius:99px;overflow:hidden">
+        <div style="height:100%;width:${pct}%;background:linear-gradient(90deg,var(--blue1),var(--blue2));border-radius:99px;transition:width .6s"></div>
+      </div>
+    </div>`;
+
+  const list=document.getElementById('chapters-list');
+  list.innerHTML='';
+  CHAPTERS.forEach(ch=>{
+    const isDone=progress[ch.id];
+    const d=document.createElement('div');
+    d.className='card';
+    d.style.cssText='display:flex;align-items:center;gap:12px;cursor:pointer;transition:border-color .2s;border:1px solid var(--border)';
+    d.onmouseover=()=>d.style.borderColor='rgba(59,130,246,.5)';
+    d.onmouseout=()=>d.style.borderColor='var(--border)';
+    d.onclick=()=>openLesson(ch);
+    d.innerHTML=`
+      <div style="width:38px;height:38px;border-radius:50%;background:${isDone?'rgba(34,197,94,.15)':'rgba(59,130,246,.1)'};border:1px solid ${isDone?'rgba(34,197,94,.4)':'rgba(59,130,246,.3)'};display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:700;color:${isDone?'#86efac':'var(--blue3)'};flex-shrink:0">${isDone?'✓':ch.id}</div>
+      <div style="flex:1;min-width:0">
+        <div style="font-weight:600;font-size:14px">${ch.title}</div>
+        <div style="font-size:12px;color:var(--text2);margin-top:2px">${ch.desc}</div>
+      </div>
+      <div style="display:flex;flex-direction:column;align-items:flex-end;gap:5px;flex-shrink:0">
+        <span style="font-size:12px;color:var(--text2)">${ch.time}</span>
+        ${ch.free?'<span class="badge badge-gold" style="font-size:11px">חינם</span>':'<span class="badge badge-blue" style="font-size:11px">פרמיום</span>'}
+      </div>`;
+    list.appendChild(d);
+  });
+}
+
+function openLesson(ch){
+  const progress=JSON.parse(localStorage.getItem('ta_progress')||'{}');
+  document.getElementById('lesson-content').innerHTML=`
+    <div style="margin-bottom:1.5rem">
+      <div style="display:flex;align-items:center;gap:8px;margin-bottom:10px">
+        <span class="badge badge-blue">פרק ${ch.id}</span>
+        <span style="font-size:13px;color:var(--text2)">${ch.time}</span>
+      </div>
+      <h2 style="font-size:1.6rem;font-weight:700">${ch.title}</h2>
+      <p style="color:var(--text2);margin-top:6px">${ch.desc}</p>
+    </div>
+    <div class="card" style="text-align:center;padding:2.5rem;margin-bottom:1.5rem;border:1px solid rgba(59,130,246,.2)">
+      <div style="font-size:3rem;margin-bottom:10px">🎬</div>
+      <div style="font-weight:600;margin-bottom:4px">וידאו השיעור</div>
+      <div style="font-size:13px;color:var(--text2);margin-bottom:1rem">החלף את VIDEO_ID_HERE במזהה הסרטון מיוטיוב</div>
+      <code style="font-size:12px;color:var(--blue3);background:rgba(59,130,246,.1);padding:6px 14px;border-radius:6px">VIDEO_ID_HERE</code>
+    </div>
+    <div class="card" style="margin-bottom:1.5rem">
+      <div style="font-weight:600;margin-bottom:12px;color:var(--text3)">נושאי הפרק</div>
+      <ul style="list-style:none;font-size:14px;line-height:2.2;color:var(--text2)">
+        <li>📌 הקדמה ורקע תיאורטי</li>
+        <li>📌 דוגמאות מעשיות מהשוק הישראלי</li>
+        <li>📌 תרגול עצמי + שאלות לחשיבה</li>
+        <li>📌 סיכום וטיפים מרכזיים</li>
+      </ul>
+    </div>
+    <div style="display:flex;gap:10px;flex-wrap:wrap">
+      <button class="btn ${progress[ch.id]?'btn-outline':'btn-gold'}" onclick="markDone(${ch.id})" id="done-btn-${ch.id}" style="${progress[ch.id]?'border-color:#86efac;color:#86efac':''}">
+        ${progress[ch.id]?'✓ הושלם':'סמן כהושלם ✓'}
+      </button>
+      ${ch.id<12?`<button class="btn btn-outline" onclick="openLesson(CHAPTERS[${ch.id}])">פרק הבא ←</button>`:''}
+    </div>`;
+  goTo('lesson');
+}
+
+function markDone(id){
+  const p=JSON.parse(localStorage.getItem('ta_progress')||'{}');
+  p[id]=true;
+  localStorage.setItem('ta_progress',JSON.stringify(p));
+  const btn=document.getElementById('done-btn-'+id);
+  if(btn){btn.textContent='✓ הושלם';btn.className='btn btn-outline';btn.style.cssText='border-color:#86efac;color:#86efac';}
+}
+
+if(currentUser)goTo('dashboard');
+</script>
+
+
+
+</body></html>
